@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "GSHealthKitManager.h"
 
 @interface AppDelegate ()
 
@@ -28,7 +27,32 @@
                                              [HKQuantityType quantityTypeForIdentifier:HKQuantityTypeIdentifierHeartRate]
                                              ]];
     
-    [[AppDelegate healthStore] requestAuthorizationToShareTypes:nil readTypes:readTypes completion:completion];
+    NSSet *writeTypes = [NSSet setWithArray:@[
+                                             [HKQuantityType quantityTypeForIdentifier:HKQuantityTypeIdentifierHeartRate]
+                                             ]];
+    
+    [[AppDelegate healthStore] requestAuthorizationToShareTypes:writeTypes readTypes:readTypes completion:completion];
+}
+
++ (void)storeHeartBeatsAtMinute:(double)beats
+                      startDate:(NSDate *)startDate endDate:(NSDate *)endDate
+                     completion:(void (^)(NSError *error))completion
+{
+    HKUnit *count = [HKUnit unitFromString:@"count/min"];
+    HKQuantityType *rateType = [HKQuantityType quantityTypeForIdentifier:HKQuantityTypeIdentifierHeartRate];
+    HKQuantity *rateQuantity = [HKQuantity quantityWithUnit:count
+                                                doubleValue:(double)beats];
+
+    HKQuantitySample *rateSample = [HKQuantitySample quantitySampleWithType:rateType
+                                                                   quantity:rateQuantity
+                                                                  startDate:startDate
+                                                                    endDate:endDate];
+    
+    [[AppDelegate healthStore] saveObject:rateSample withCompletion:^(BOOL success, NSError *error) {
+        if(completion) {
+            completion(error);
+        }
+    }];
 }
 
 +(HKHealthStore*)healthStore {

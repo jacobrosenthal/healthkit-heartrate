@@ -7,11 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GSHealthKitManager.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
++(HKHealthStore*)healthStore;
+    
++ (void)requestHealthStorePermissionsWithCompletion:(void(^)(BOOL success, NSError *error))completion;
+
++ (void)storeHeartBeatsAtMinute:(double)beats startDate:(NSDate *)startDate endDate:(NSDate *)endDate completion:(void (^)(NSError *error))completion;
 
 @end
 
