@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B3277185C90356E42F95F531C151939048CFA1A1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B3277185C90356E42F95F531C151939048CFA1A1" : 0,
+    "BD6657F31D4C1120EA4C70CED01D9BAB4B691FFF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EF8C7B7A-E11F-4D4C-ACC9-33F616A5601F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B3277185C90356E42F95F531C151939048CFA1A1" : "VIsual\/",
+    "BD6657F31D4C1120EA4C70CED01D9BAB4B691FFF" : "..\/Downloads\/ble-selector"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "VIsual",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "VIsual.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:jacobrosenthal\/healthkit-heartrate.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B3277185C90356E42F95F531C151939048CFA1A1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:jacobrosenthal\/ble-selector.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BD6657F31D4C1120EA4C70CED01D9BAB4B691FFF"
+    }
+  ]
+}

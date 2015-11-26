@@ -1,0 +1,23 @@
+PODS:
+  - ble-selector (0.1.0)
+
+DEPENDENCIES:
+  - ble-selector (from `https://github.com/jacobrosenthal/ble-selector.git`, commit
+    `1f7a5e63631290db492ab90443afbf4bcb30d5ca`, branch `master`)
+
+EXTERNAL SOURCES:
+  ble-selector:
+    :branch: master
+    :commit: 1f7a5e63631290db492ab90443afbf4bcb30d5ca
+    :git: https://github.com/jacobrosenthal/ble-selector.git
+
+CHECKOUT OPTIONS:
+  ble-selector:
+    :branch: master
+    :commit: 1f7a5e63631290db492ab90443afbf4bcb30d5ca
+    :git: https://github.com/jacobrosenthal/ble-selector.git
+
+SPEC CHECKSUMS:
+  ble-selector: 4cfbf2c80484359663c0eeda3b9d1327f36cdc1b
+
+COCOAPODS: 0.39.0
